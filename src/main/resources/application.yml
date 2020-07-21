@@ -1,0 +1,32 @@
+server:
+  port: 9914
+spring:
+  application:
+    name: quality-inspector
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/multitarget-detection?useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+    #password: Admin123456.
+
+# mybatis:
+#  type-aliases-package: com.multitarget.detection.pojo
+#  mapper-locations: classpath:mapper/*.xml
+#  configuration:
+#    map-underscore-to-camel-case: true
+
+mybatis-plus:
+  type-aliases-package: com.quality.inspector.pojo
+  configuration:
+    map-underscore-to-camel-case: true
+
+#图片处理地址
+imageDealUrl: http://172.17.0.13:1307
+#imageDealUrl: http://192.168.100.105:1307
+#图片存储地址
+imageUrl: /home/sycv_wbk/deployment/image/
+#imageUrl: E:/桌面/image/test/
+
+
+
